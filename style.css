@@ -1,0 +1,189 @@
+:root {
+    --body-Color:rgb(119, 175, 168);
+    --background-color: black ;
+    --button-color: rgb(231, 224, 213);
+
+}
+
+* {
+   
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition-duration: 200ms;
+    font-family:Montserrat;
+}
+
+
+body {
+   height: 100vh;
+   width: 100%;
+   background-color: var(--background-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.header {
+    font-size: 3.3em;
+    display: flex;
+    flex: 1;
+    align-items:center;
+    justify-content:  center;
+    text-align: center;
+}
+
+.header h1 {
+    padding-right: 10%;
+}
+
+.middleInfo {
+    display: flex;
+     flex-direction: column;
+     flex: 2;
+    margin: 0px 20px;
+
+
+}
+
+
+ section {
+    background-color: var(--body-Color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+ }
+ .imgContainerHolder {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+ }
+
+.imgContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Set width of container */
+    height: 300px; /* Set height of container */
+    /* border: 1px solid #000000; Example border */
+    max-width: 500px;
+   
+}
+
+.imgContainer img {
+ max-width: 100%;
+ max-height: 100%;
+ height: auto;
+ flex: 1;
+}
+.links {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+}
+
+.links a {
+
+    background-color: transparent;
+    border: black solid 1px;
+    background-color: var(--button-color);
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 40px;
+    min-width: 110px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#london:hover {
+    background-image: url(https://cdn.suwalls.com/wallpapers/digital-art/flag-of-england-45794-1920x1080.jpg);
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; 
+    color: white;
+}
+#paris:hover {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.amR-tcffn3ZXVFfRWQte6gHaDt&pid=Api&P=0&h=220);
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; 
+    color: red;
+    
+}
+#greece:hover {
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.ekp1TtqlzqDWuBsddj_65wHaFQ&pid=Api&P=0&h=220);
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; 
+    color: rgb(255, 255, 255);
+}
+
+
+
+.bottomSection {
+    display: flex;
+    flex: 2;
+    width: 80;
+    
+}
+
+.imglink {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1 1 auto;
+   
+
+}
+
+.imglink a {
+    background-color: var(--button-color);
+   border: 1px black solid;
+   padding: 35px;
+    /* padding: 5px 15px; */
+    /* border-radius: 40px; */
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.imglink a:hover {
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.j6k7K4HtKXCo_3Te7kcBQQHaE7&pid=Api&P=0&h=220);
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; 
+    color: rgb(255, 255, 255);
+}
+
+.text {
+    display: flex;
+    flex: 1 1 auto;
+    font-size: small;
+    align-items: center;
+   
+
+}
+
+.year {
+    display: flex;
+    flex: 1 1 auto;
+    flex: auto;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+
