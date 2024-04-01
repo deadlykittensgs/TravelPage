@@ -1,19 +1,25 @@
 :root {
-    --body-Color:rgb(119, 175, 168);
-    --background-color: black ;
-    --button-color: rgb(231, 224, 213);
+    --body-Color:rgb(0, 0, 0);
+    --background-color: rgb(0, 0, 0) ;
+    --button-color: rgb(253, 255, 254);
+    --text-color: white;
 
 }
 
 * {
-   
+     /* outline: 1px solid greenyellow;   */
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     transition-duration: 200ms;
     font-family:Montserrat;
+    color: aliceblue;
 }
 
+
+p {
+    font-size: 1.2em;
+}
 
 body {
    height: 100vh;
@@ -33,20 +39,22 @@ body {
     align-items:center;
     justify-content:  center;
     text-align: center;
+   border-bottom: 1px white solid;
 }
 
-.header h1 {
-    padding-right: 10%;
+.header {
+    font-family:'Times New Roman', Times, serif
 }
-
 .middleInfo {
     display: flex;
-     flex-direction: column;
+     flex-direction: row;
+     justify-content: space-evenly;
      flex: 2;
-    margin: 0px 20px;
-
+     /* border-bottom: 1px solid white; */
+    
 
 }
+
 
 
  section {
@@ -59,7 +67,7 @@ body {
  .imgContainerHolder {
     display: flex;
     flex-direction: row;
-    flex: 1;
+    flex: 4;
     align-content: center;
     justify-content: center;
  }
@@ -71,7 +79,8 @@ body {
     width: 100%; /* Set width of container */
     height: 300px; /* Set height of container */
     /* border: 1px solid #000000; Example border */
-    max-width: 500px;
+    max-width: 1000px;
+    flex: 3;
    
 }
 
@@ -84,20 +93,22 @@ body {
 .links {
    
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 150px;
+    flex: 1;
+    
 }
 
 .links a {
 
     background-color: transparent;
-    border: black solid 1px;
+    border: rgb(255, 255, 255) solid 1px;
     background-color: var(--button-color);
     margin: 10px;
     padding: 15px 20px;
     border-radius: 40px;
+    
     min-width: 110px;
     text-align: center;
     text-decoration: none;
@@ -110,6 +121,7 @@ body {
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; 
     color: white;
+    cursor: pointer;
 }
 #paris:hover {
     background-image: url(https://tse1.mm.bing.net/th?id=OIP.amR-tcffn3ZXVFfRWQte6gHaDt&pid=Api&P=0&h=220);
@@ -117,6 +129,7 @@ body {
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; 
     color: red;
+    cursor: pointer;
     
 }
 #greece:hover {
@@ -125,15 +138,14 @@ body {
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; 
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 
 
 .bottomSection {
-    
     display: flex;
-    flex: 1;
-
+    flex: 2;
     
 }
 
@@ -148,7 +160,7 @@ body {
 
 .imglink a {
     background-color: var(--button-color);
-   border: 1px black solid;
+   border: 1px solid white;
    padding: 35px;
     /* padding: 5px 15px; */
     /* border-radius: 40px; */
@@ -164,16 +176,26 @@ body {
     background-size: cover; /* Ensure the image covers the entire button */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; 
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .text {
     display: flex;
+    flex-direction: column;
     flex: 1 1 auto;
     font-size: small;
-    align-items: center;
+    justify-content: center;
    
 
+}
+
+h2 {
+    text-align: center;
+}
+
+#arrow {
+    transform: rotate(45deg)
 }
 
 .year {
@@ -184,7 +206,35 @@ body {
     align-items: center;
     justify-content: center;
     margin: 20px;
+    color: var(--text-color);
 
 }
 
 
+
+footer {
+    justify-content: space-between;
+    display: flex;
+    background-color: rgb(23, 22, 22);
+    /* border-top: white solid 1px; */
+    text-align: center;
+    font-size: small;
+}
+
+footer p{
+    font-size: 0.5em;
+    margin: 10px;
+}
+
+footer a {
+    font-size: 0.9em;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+footer a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+} 
