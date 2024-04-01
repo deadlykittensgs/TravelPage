@@ -130,9 +130,10 @@ body {
 
 
 .bottomSection {
+    
     display: flex;
-    flex: 2;
-    width: 80;
+    flex: 1;
+
     
 }
 
